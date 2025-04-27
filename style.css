@@ -1,0 +1,167 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Saira', sans-serif;
+    background-color: #000;
+    color: #C22D00; /* Burnt orange/reddish color */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: underline;
+    color: #C22D00; /* Burnt orange/reddish color for links */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #FFFFFF; /* White color for hover */
+    transform: scale(1.05);
+}
+
+/* Navigation styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 100;
+}
+
+nav .nav-link {
+    font-size: 18px;
+    margin: 0 20px;
+    text-transform: lowercase;
+    text-decoration: none; /* Remove underline for nav links */
+}
+
+nav .nav-link:hover {
+    color: #FFFFFF; /* White color for hover */
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-content {
+    max-width: 800px; /* Adjusting max width for smaller content */
+    text-align: center;
+}
+
+.hero-image {
+    border-radius: 2%;
+    width: 50%; /* Make the image smaller */
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgb(255, 255, 255); /* Updated shadow color to match new font */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+}
+
+/* Section styles */
+section {
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px; /* Added padding to create space below the navbar */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quotes-list, .til-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.quotes-list li, .til-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.quotes-list li:last-child, .til-list li:last-child {
+    border-bottom: none;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .hero-image {
+        width: 70%; /* Make the image larger on smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    nav .nav-link {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem; /* Further adjust font size for very small screens */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Adjust font size for small screens */
+    }
+
+    nav .nav-link {
+        font-size: 14px; /* Adjust font size for very small screens */
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjust heading size for very small screens */
+    }
+
+    section {
+        padding: 10px;
+    }
+}
