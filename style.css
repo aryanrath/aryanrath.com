@@ -62,7 +62,7 @@ nav .nav-link:hover {
 }
 
 .hero-image {
-    border-radius: 2%;
+    border-radius: 3%;
     width: 50%; /* Make the image smaller */
     margin-top: 20px;
     box-shadow: 0 0 15px rgb(255, 255, 255); /* Updated shadow color to match new font */
